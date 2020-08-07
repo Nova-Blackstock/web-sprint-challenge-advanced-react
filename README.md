@@ -30,13 +30,43 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  You have to use class ... extends React.Component, and then you
+  have to make a constructor with a superextension in which you place
+  a this.state array of state objects with key value pairs.
+
 2. Describe the different phases of the component lifecycle.
+
+  There is a mounting phase, an updating phase, and an unmounting phase.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+  Use componentDidMount to execute functions upon completion of first mounting.
+
+  Use componentDidUpdate to execute functions upon completion of a re-render provoked by changes. Watch out for infinite loop, especially
+  with API calls!
+
+  Use componentWillUnmount to execute functions during
+  an unmounting phase.
+
 4. Define stateful logic.
 
+  This describes the logic which manages state within components, including
+  the outsourcing of state management through custom hooks and the passing of stateful data to children through props.
+
 5. Describe how to test a React component with React Testing Library.
+
+  Create .test.js files
+
+  Make certain you have the correct dependencies for the rtl
+
+  Import what is necessary, like render, screen, and fireEvent from the rtl. Import the component you desire to test. Make 1 test per component.
+
+  Decide whether your tests are asyncronous. 
+
+  Render component, grab elements/text/etc. from the screen, execute fireEvents, and make assertions.
+
+  Npm run test in your terminal and manipulate/fail tests to ensure
+  efficacy of one's code.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
